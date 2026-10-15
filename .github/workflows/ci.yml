@@ -1,0 +1,13 @@
+name: sandbox
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  ci:
+    name: sandbox/ci
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ok
